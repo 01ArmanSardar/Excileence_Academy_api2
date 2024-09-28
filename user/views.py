@@ -71,7 +71,7 @@ class UserRegistrationApiview(APIView):
             token = default_token_generator.make_token(user)
             uid = urlsafe_base64_encode(force_bytes(user.pk))
             print('uid',uid)
-            confirm_link = f"https://Excileence_Academy_api.onrender.com//user/active/{uid}/{token}"
+            confirm_link = f"https://excileence-academy-api-5v91.onrender.com/tution///user/active/{uid}/{token}"
             email_subject = "Confirm your email"
             email_body = render_to_string('confirm_email.html',{'confirm_link':confirm_link})
             email = EmailMultiAlternatives(email_subject,'',to=[user.email])
