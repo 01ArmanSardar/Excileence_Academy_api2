@@ -1,8 +1,9 @@
 asgiref
 Django
+django-cors-headers
+django-email
 django-environ
 django-filter
 djangorestframework
 sqlparse
 tzdata
-django-cors-headers
