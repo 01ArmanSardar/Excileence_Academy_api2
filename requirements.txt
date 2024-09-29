@@ -5,3 +5,4 @@ django-filter
 djangorestframework
 sqlparse
 tzdata
+django-cors-headers
